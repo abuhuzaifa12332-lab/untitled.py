@@ -1,22 +1,44 @@
-Project: FinSmart AI - Privacy-First Local Financial Dashboard
+# FinSmart AI: Local Expense Analyzer
 
-1. The Problem Statement:
-Modern wealth trackers jeopardize data security by pushing sensitive financial profiles to external cloud databases. Additionally, integrating continuous generative AI features triggers heavy operational API billing risks, making global scalability unsustainable for independent users.
+A privacy-first, locally-hosted financial analytics platform built with Python and Streamlit. It tracks expenses, visualizes financial trends via Plotly, and uses smart local heuristics to give financial advice with 100% offline security and zero premium API token costs.
 
-2. The Innovation & Solution:
-FinSmart AI solves this problem by delivering a robust Python and Streamlit web application running 100% offline. By integrating deterministic rule-based local evaluation algorithms, the application generates instant expense analysis, budget checks, and smart financial metrics directly within the browser without any third-party API dependencies.
+---
 
-3. Complete Local Deployment Guide (Judges Framework):
-Step 1: Download or clone the code framework via GitHub using terminal execution:
-git clone https://github.com/abuhuzaifa12332-lab/untitled.py.git
+## 🚀 Complete Local Deployment Guide
 
-Step 2: Initialize clean configurations and install specific dashboard libraries from requirements:
+Follow these steps to deploy and run the project safely on your local machine:
+
+### Step 1: Clone the Repository
+Open your Terminal or Command Prompt (CMD) and run the following command to download the code framework:
+```bash
+git clone https://github.com
+```
+
+### Step 2: Install Required Dependencies
+Navigate inside the project directory and install the tracking libraries from the requirements file:
+```bash
 pip install -r requirements-1.txt
+```
 
-Troubleshooting: If standard package configuration conflicts occur, initialize the system environment virtual wrapper explicitly:
+### 💡 Troubleshooting (Virtual Environment setup)
+If you face package permission errors or Streamlit fails to install globally, initialize a clean local python virtual wrapper:
+
+**For Windows:**
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+venv\Scripts\activate
 pip install streamlit plotly pandas
+```
 
-Step 3: Launch the interactive analytics dashboard instantly via local network host:
+**For macOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install streamlit plotly pandas
+```
+
+### Step 3: Launch the App
+Run this final command to make the interactive dashboard live on your local browser:
+```bash
 streamlit run untitled.py
+```
