@@ -11,7 +11,7 @@ Follow these steps to deploy and run the project safely on your local machine:
 ### Step 1: Clone the Repository
 Open your Terminal or Command Prompt (CMD) and run the following command to download the code framework:
 ```bash
-git clone https://github.com
+git clone 
 ```
 
 ### Step 2: Install Required Dependencies
